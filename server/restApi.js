@@ -1,5 +1,17 @@
 HTTP.methods({
     /**
+     * 통신 테스트용 메서드
+     * @param data
+     * @returns {{status: string}}
+     */
+    'test': function (data) {
+      console.log(data);
+        return{
+          status: 'success'
+      }  
+    },
+    
+    /**
      * 글 작성 메서드
      * @param data
      */
